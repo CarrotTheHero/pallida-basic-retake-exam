@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PokeBag
+﻿namespace PokeBag
 {
     public class Pokemon
     {
