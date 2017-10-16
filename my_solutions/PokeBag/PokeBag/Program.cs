@@ -35,6 +35,7 @@ namespace PokeBag
             PokemonBag pokemonBag = new PokemonBag();
 
             Console.WriteLine(pokemonBag.pokeBag[0].Speak());
+            Console.ReadLine();
         }
     }
 }

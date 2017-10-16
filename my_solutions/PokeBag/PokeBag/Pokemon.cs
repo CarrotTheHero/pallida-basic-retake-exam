@@ -7,10 +7,10 @@ namespace PokeBag
         protected int HP;
         protected string Talking;
 
-        public void Speak(string talking)
+        public bool Speak()
         {
-            Talking = talking;
-            
+            Console.WriteLine("{0}", Talking);
+            return true;
         }
     }
 }
