@@ -10,12 +10,12 @@ namespace PokeBag
         {
             foreach (var pokemon in pokeBag)
             {
-                int strogest = pokemon.strength;
-                if (pokemon.strength > strogest)
+                int strongest = pokemon.strength;
+                if (pokemon.strength > strongest)
                 {
-                    strogest = pokemon.strength;
+                    strongest = pokemon.strength;
                 }
-                return strogest.GetType().Name;
+                return strongest.GetType().Name;
             }
             return "";
         }
