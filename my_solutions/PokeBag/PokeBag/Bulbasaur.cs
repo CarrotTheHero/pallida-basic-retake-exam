@@ -1,15 +1,13 @@
-﻿using System;
-
-namespace PokeBag
+﻿namespace PokeBag
 {
     public class Bulbasaur : Pokemon
     {
         public Bulbasaur()
         {
+            Pokemon pokemon = new Pokemon();
             HP = 10;
             Talking = "Bulba-saur";
-            Random random = new Random();
-            strength = random.Next(1, 10);
+            strength = pokemon.random.Next(1, 10);
         }
     }
 }

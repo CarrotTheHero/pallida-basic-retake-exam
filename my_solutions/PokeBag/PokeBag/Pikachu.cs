@@ -1,16 +1,13 @@
-﻿using System;
-
-namespace PokeBag
+﻿namespace PokeBag
 {
     public class Pikachu : Pokemon
     {
         public Pikachu()
         {
+            Pokemon pokemon = new Pokemon();
             HP = 12;
             Talking = "Pika-pika";
-            Random random = new Random();
-            strength = random.Next(1, 10);
-
+            strength = pokemon.random.Next(1, 10);
         }
     }
 }
