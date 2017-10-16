@@ -35,6 +35,7 @@ The application is accepted if:
 [add your answer here]
 - Inheritance enables you to create new classes (derived class) that reuse, extend, and modify the behavior
   that is defined in other classes (base class).
+- We use this if we have a large group (plants), each one is green, but has different smell.
 
 
 
