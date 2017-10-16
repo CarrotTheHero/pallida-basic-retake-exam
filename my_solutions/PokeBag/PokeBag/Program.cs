@@ -44,6 +44,8 @@ namespace PokeBag
             pokemonBag.pokeBag.Add(new Charmander());
 
             Console.WriteLine(pokemonBag.pokeBag[0].Speak(pikachu));
+
+            //string stongestPokemon = PokemonBag.GetStrongest();
             Console.ReadLine();
         }
     }

@@ -6,15 +6,11 @@ namespace PokeBag
     {
         protected int HP;
         protected string Talking;
-        protected int strength;
+        public int strength;
 
         public string Speak(Pokemon pokemon)
         {
             return pokemon.Talking;
-        }
-        public string GetStrongest()
-        {
-            return GetType().Name;
         }
     }
 }
