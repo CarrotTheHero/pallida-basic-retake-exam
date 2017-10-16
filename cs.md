@@ -33,6 +33,9 @@ The application is accepted if:
 ###  What is inheritance? When would you use it? [2p]
 #### Your answer:
 [add your answer here]
+- Inheritance enables you to create new classes (derived class) that reuse, extend, and modify the behavior
+  that is defined in other classes (base class).
+
 
 
 ### Name each building block of a method! [2p]
@@ -41,11 +44,11 @@ The application is accepted if:
 
 #### Your answer:
 [add your answer here]   
-1:   
-2:   
-3:   
-4:   
-5:   
-6:   
-7:   
-8:
+1:   signature
+2:   return type
+3:   method name
+4:   argument type
+5:   argument variable
+6:   local variable
+7:   method body
+8:   return statment
