@@ -32,13 +32,19 @@ namespace PokeBag
     {
         static void Main(string[] args)
         {
+            Pikachu pikachu = new Pikachu();
+            Bulbasaur bulbasaur = new Bulbasaur();
+            Charmander charmander = new Charmander();
+
             PokemonBag pokemonBag = new PokemonBag();
+            pokemonBag.pokeBag.Add(new Pikachu());
+            pokemonBag.pokeBag.Add(new Pikachu());
+            pokemonBag.pokeBag.Add(new Pikachu());
+            pokemonBag.pokeBag.Add(new Bulbasaur());
+            pokemonBag.pokeBag.Add(new Charmander());
 
-            Console.WriteLine(pokemonBag.pokeBag[0].Speak());
-
-            //var stongestPokemon = pokemonBag.pokeBag.GetStrongest();
-            //Console.WriteLine(strongestPokemon);
-            //Console.ReadLine();
+            Console.WriteLine(pokemonBag.pokeBag[0].Speak(pikachu));
+            Console.ReadLine();
         }
     }
 }

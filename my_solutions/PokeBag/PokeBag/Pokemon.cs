@@ -8,13 +8,13 @@ namespace PokeBag
         protected string Talking;
         protected int strength;
 
-        public string Speak()
+        public string Speak(Pokemon pokemon)
         {
-            return Talking;
+            return pokemon.Talking;
         }
-        public void GetStrongest()
+        public string GetStrongest()
         {
-            Console.WriteLine();
+            return GetType().Name;
         }
     }
 }

@@ -7,17 +7,8 @@ using PokeBag;
 
 namespace PokeBag
 {
-    class PokemonBag
+    public class PokemonBag
     {
-        public List<Pokemon> pokeBag;
-
-        public PokemonBag()
-        {
-            pokeBag.Add(new Pikachu());
-            pokeBag.Add(new Pikachu());
-            pokeBag.Add(new Pikachu());
-            pokeBag.Add(new Bulbasaur());
-            pokeBag.Add(new Charmander());
-        }
+        public List<Pokemon> pokeBag = new List<Pokemon>();
     }
 }
