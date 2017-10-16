@@ -27,9 +27,9 @@ namespace CountChars
     {
         static void Main(string[] args)
         {
-            var countedLetter0 = CountLetter0();
-            var countedLetter1 = CountLetter1();
-            var countedLetterX = CountLetterX();
+            var countedLetter0 = CountLetter('0');
+            var countedLetter1 = CountLetter('1');
+            var countedLetterX = CountLetter('x');
 
             Console.WriteLine("0 occured {0} times in the file.", countedLetter0);
             Console.WriteLine("1 occured {0} times in the file.", countedLetter1);
@@ -37,48 +37,18 @@ namespace CountChars
             Console.ReadLine();
         }
 
-        private static object CountLetter0()
+        private static object CountLetter(int input)
         {
             int count = 0;
-
             string text = File.ReadAllText("da_vinci_code.txt");
             foreach (char character in text)
             {
-                if (character == '0')
+                if (character == input)
                 {
                     count++;
                 }
             }
             return count;
-        }
-
-        private static object CountLetter1()
-        {
-            int count = 0;
-
-            string text = File.ReadAllText("da_vinci_code.txt");
-            foreach (char character in text)
-            {
-                if (character == '1')
-                {
-                    count++;
-                }
-            }
-            return count;
-        }
-        private static object CountLetterX()
-        {
-            int count = 0;
-
-            string text = File.ReadAllText("da_vinci_code.txt");
-            foreach (char character in text)
-            {
-                if (character == 'x')
-                {
-                    count++;
-                }
-            }
-            return count;
-        }
+        }       
     }
 }
