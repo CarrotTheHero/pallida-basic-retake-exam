@@ -27,22 +27,47 @@ namespace CountChars
     {
         static void Main(string[] args)
         {
-            var countedLetters = CountLetters("da_vinci_code.txt");
+            var countedLetter0 = CountLetter0("da_vinci_code.txt");
+            var countedLetter1 = CountLetter1("da_vinci_code.txt");
+            var countedLetterX = CountLetterX("da_vinci_code.txt");
 
-            Console.WriteLine("0 occured {0} times in the file.", countedLetters["0"]);
-            Console.WriteLine("1 occured {0} times in the file.", countedLetters["1"]);
-            Console.WriteLine("x occured {0} times in the file.", countedLetters["x"]);
+            Console.WriteLine("0 occured {0} times in the file.", countedLetter0);
+            Console.WriteLine("1 occured {0} times in the file.", countedLetter1);
+            Console.WriteLine("x occured {0} times in the file.", countedLetterX);
+            Console.ReadLine();
         }
 
-        private static object CountLetters(string file)
+        private static object CountLetter0(string file)
         {
             int count = 0;
-            foreach (char character in "da_vinci_code.txt")
+
+            using (var sr = new StreamReader(file))
             {
-                if (character == '0')
-                {
+                while (sr.Read() == '0')
                     count++;
-                }
+            }
+            return count;
+        }
+
+        private static object CountLetter1(string file)
+        {
+            int count = 0;
+
+            using (var sr = new StreamReader("da_vinci_code.txt"))
+            {
+                while (sr.Read() == '1')
+                    count++;
+            }
+            return count;
+        }
+        private static object CountLetterX(string file)
+        {
+            int count = 0;
+
+            using (var sr = new StreamReader("da_vinci_code.txt"))
+            {
+                while (sr.Read() == 'x')
+                    count++;
             }
             return count;
         }
