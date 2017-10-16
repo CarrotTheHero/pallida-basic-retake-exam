@@ -10,17 +10,18 @@ namespace PokeBag
     {
         public List<Pokemon> pokeBag = new List<Pokemon>();
 
-        //public string GetStrongest()
-        //{
-        //    foreach (var poke in pokeBag)
-        //    {
-        //        int strogest = poke.strength;
-        //        if (poke.strength > strogest)
-        //        {
-        //            strogest = poke.strength;
-        //        }
-        //        return strogest.GetType().Name;
-        //    }
-        //}
+        public string GetStrongest()
+        {
+            foreach (var pokemon in pokeBag)
+            {
+                int strogest = pokemon.strength;
+                if (pokemon.strength > strogest)
+                {
+                    strogest = pokemon.strength;
+                }
+                return strogest.GetType().Name;
+            }
+            return "";
+        }
     }
 }

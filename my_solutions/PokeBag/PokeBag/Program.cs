@@ -45,7 +45,8 @@ namespace PokeBag
 
             Console.WriteLine(pokemonBag.pokeBag[0].Speak(pikachu));
 
-            //string stongestPokemon = PokemonBag.GetStrongest();
+            string strongestPokemon = pokemonBag.GetStrongest();
+            Console.WriteLine(strongestPokemon);
             Console.ReadLine();
         }
     }
