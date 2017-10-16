@@ -27,9 +27,9 @@ namespace CountChars
     {
         static void Main(string[] args)
         {
-            var countedLetter0 = CountLetter0("da_vinci_code.txt");
-            var countedLetter1 = CountLetter1("da_vinci_code.txt");
-            var countedLetterX = CountLetterX("da_vinci_code.txt");
+            var countedLetter0 = CountLetter0();
+            var countedLetter1 = CountLetter1();
+            var countedLetterX = CountLetterX();
 
             Console.WriteLine("0 occured {0} times in the file.", countedLetter0);
             Console.WriteLine("1 occured {0} times in the file.", countedLetter1);
@@ -37,37 +37,46 @@ namespace CountChars
             Console.ReadLine();
         }
 
-        private static object CountLetter0(string file)
+        private static object CountLetter0()
         {
             int count = 0;
 
-            using (var sr = new StreamReader(file))
+            string text = File.ReadAllText("da_vinci_code.txt");
+            foreach (char character in text)
             {
-                while (sr.Read() == '0')
+                if (character == '0')
+                {
                     count++;
+                }
             }
             return count;
         }
 
-        private static object CountLetter1(string file)
+        private static object CountLetter1()
         {
             int count = 0;
 
-            using (var sr = new StreamReader("da_vinci_code.txt"))
+            string text = File.ReadAllText("da_vinci_code.txt");
+            foreach (char character in text)
             {
-                while (sr.Read() == '1')
+                if (character == '1')
+                {
                     count++;
+                }
             }
             return count;
         }
-        private static object CountLetterX(string file)
+        private static object CountLetterX()
         {
             int count = 0;
 
-            using (var sr = new StreamReader("da_vinci_code.txt"))
+            string text = File.ReadAllText("da_vinci_code.txt");
+            foreach (char character in text)
             {
-                while (sr.Read() == 'x')
+                if (character == 'x')
+                {
                     count++;
+                }
             }
             return count;
         }
