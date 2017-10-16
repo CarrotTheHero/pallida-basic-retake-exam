@@ -9,7 +9,7 @@ namespace PokeBag
             HP = 10;
             Talking = "Bulba-saur";
             Random random = new Random();
-            int strenght = random.Next(1, 10);
+            strength = random.Next(1, 10);
         }
     }
 }

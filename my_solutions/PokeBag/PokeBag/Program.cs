@@ -35,7 +35,10 @@ namespace PokeBag
             PokemonBag pokemonBag = new PokemonBag();
 
             Console.WriteLine(pokemonBag.pokeBag[0].Speak());
-            Console.ReadLine();
+
+            //var stongestPokemon = pokemonBag.pokeBag.GetStrongest();
+            //Console.WriteLine(strongestPokemon);
+            //Console.ReadLine();
         }
     }
 }

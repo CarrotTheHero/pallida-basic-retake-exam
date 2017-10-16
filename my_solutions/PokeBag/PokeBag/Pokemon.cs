@@ -6,11 +6,15 @@ namespace PokeBag
     {
         protected int HP;
         protected string Talking;
+        protected int strength;
 
-        public bool Speak()
+        public string Speak()
         {
-            Console.WriteLine("{0}", Talking);
-            return true;
+            return Talking;
+        }
+        public void GetStrongest()
+        {
+            Console.WriteLine();
         }
     }
 }
